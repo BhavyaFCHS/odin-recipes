@@ -1,41 +1,72 @@
 /* General styles for the whole website */
 
 body {
-    background-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    background-color: rgba(250, 235, 215, 0.4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/*text align*/
-
-h2, h3, li, .description {
-    text-align: left;
+/* Background colors for paragraphs and lists */
+ul, ol, .description {
+    background-color: white;
 }
 
+/* Heading Text Color */
+h1, h2, h3 {
+    color: midnightblue;
+}
+
+/* Heading Sizes */
 h1 {
+    text-align: center;
     font-size: 52px;
 }
 
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+
+/* Image Sizes */
 img {
     height: auto;
     width: 500;
 }
 
+/* General Text Color */
+p, ul, ol, a {
+    color: midnightblue;
+}
+
+
+/* General Text Typography*/
 p {
     font-size: 24px;
 }
 
 ul, ol {
-    background-color: white;
-    font-size: 18px;
+    font-size: 26px;
+    font-weight: 800;
+    width: fit-content;
+
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
     font-weight: 800;
 }
 
-/* More specific styles for the recipes */
 
+
+/* More specific styles for the recipes */
 .description {
     font-size: large;
     font-weight: normal;
+    width: auto;
 }
 
 
