@@ -65,10 +65,14 @@ a {
     padding: 5px;
     text-decoration: none;
     display: inline-block;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 a:hover {
     background-color: rgb(239, 202, 154);
+    transform: translateY(-5px);
+    font-weight: bold;
 }
 
 p.home {
@@ -94,7 +98,7 @@ li {
 }
 
 ul.home, ol.home {
-    max-width: fit-content;
+    max-width: max-content;
     margin: 8px auto;
     padding: 2px;
     writing-mode: horizontal-tb
@@ -113,8 +117,14 @@ ul.recipe, ol.recipe {
     padding: 30px;
 }
 
-.home-link {
-    display: block;
-    max-width: fit-content;
-    margin: 0 auto;
+
+/* flexbox on homepage links */
+
+#homepage-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul .link {
+    flex: 1;    
 }
